@@ -1,56 +1,69 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --fonte1: Arial, Helvetica, sans-serif;
+    --fonte2: 'Roboto', sans-serif;
+}
 
 body {
-    background-color: #FFFFFF;
-    font-family: 'Roboto', sans-serif;;
+    font-family: var(--fonte2);
+    font-weight: bold;
 }
-header {
-    margin: 1em;
-}
-nav {
-    float: right;
+h1 {
+    font-size: 2.8em;
+    color: red;
+    margin-left: 1.2em;
+    margin-top: 20px;
+    font-style: italic;
+    letter-spacing: -2px;
 }
 li {
-    display: inline;
-    position: relative;
-    padding-right: 2vw;
+    display: inline-block;
+    float: right;
+    margin-right: 2em;
+    margin-top: 20px;
 }
-li > a {
-    color: black;
+a {
     text-decoration: none;
+    color: black;
 }
-#login {
-    background-color: #D6000D;
+.bt {
+    background-color: red;
     color: white;
-    font-weight: bold;
-    padding: 8px 40px;
-    border-radius: 8px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 55px;
 }
-#img01 {
-    width: 28vw;
-    height: auto;
-    transform: translate(35%, 30%);
+section#principal {
+    margin-top: 75px;
+    margin-left: 170px;
 }
-section {
-    text-align: right;
-    transform: translate(-10%, -120%);
+img {
+    width: 400px;
 }
-section > p {
-    font-size: 2.5em;
-}
-section > h2 {
-    font-size: 4.2em;
-    transform: translate(20px, 0px)
+section#conteiner {
+    position: absolute;
+    left: 60%;
+    top: 200px;
 }
 p {
-    font-weight: bold;
+    font-size: 1.3em;
 }
-h2 {
-    color: #D6000D;
+p.textred {
+    font-size: 3.5em;
+    color: red;
+    margin-bottom: 30px;
+}
+button {
+    background-color: red;
+    color: white;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 55px;
 }
