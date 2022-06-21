@@ -6,7 +6,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
-    --fonte1: Arial, Helvetica, sans-serif;
     --fonte2: 'Roboto', sans-serif;
 }
 
@@ -16,8 +15,8 @@ body {
 }
 main {
     background-color: white;
-    max-width: 1440px;
-    min-width: 768px;
+    max-width: 1920px;
+    
     margin: auto;
 }
 h1 {
@@ -32,7 +31,7 @@ nav {
     text-align: right;
     margin-top: -30px;
 }
-li {
+.menu li {
     display: inline-block;
     margin-right: 2em;
     
@@ -49,23 +48,23 @@ a {
     padding: 10px 55px;
 }
 section#principal {
-    margin-right: 55px;
+    margin-right: 15%;
     margin-top: 75px;
     margin-left: 100px;
 }
 img {
     width: 400px;
+    
 }
 section#conteiner {
     text-align: right;
-    
     margin-top: -250px;
 }
 p {
-    font-size: 1.3em;
+    font-size: 24px;
 }
 p.textred {
-    font-size: 3.5em;
+    font-size: 64px;
     color: red;
     margin-bottom: 30px;
 }
@@ -77,13 +76,60 @@ button {
     border-radius: 10px;
     padding: 10px 55px;
 }
+ul {
+    margin-left: 50px;
+}
 
-@media screen and (max-width: 1020px) {
+section#secundaria {
+    margin-top: 10em;
+}
+
+ul.lista {
+    font-family: var(--fonte2);
+    font-weight: lighter;
+    list-style-position: inside;
+    list-style-type: '\1F534\00A0\00A0\00A0';
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1400px) {
     img {
-        width: 350px;
+        width: 400px;
     }
     p {
-        font-size: 1em;
+        font-size: 22px;
+    }
+    p.textred {
+        font-size: 60px;
+        color: red;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    img {
+        width: 400px;
+    }
+    p {
+        font-size: 20px;
+    }
+    p.textred {
+        font-size: 55px;
+        color: red;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 1140px) {
+    img {
+        width: 370px;
+    }
+    p {
+        font-size: 1.2em;
     }
     p.textred {
         font-size: 3em;
@@ -91,14 +137,50 @@ button {
         margin-bottom: 30px;
     }
 }
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 990px) {
     img {
-        width: 250px;
+        width: 320px;
     }
     section#conteiner {
         text-align: right;
         
-        margin-top: -200px;
+        margin-top: -230px;
+    }
+    p {
+        font-size: 1em;
+    }
+    p.textred {
+        font-size: 2.7em;
+        color: red;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 950px) {
+    img {
+        width: 320px;
+    }
+    section#conteiner {
+        text-align: right;
+
+    }
+    p {
+        font-size: 1em;
+    }
+    p.textred {
+        font-size: 2.7em;
+        color: red;
+        margin-bottom: 30px;
+        margin-left: 30px;
+    }
+}
+@media screen and (max-width: 900px) {
+    img {
+        width: 280px;
+    }
+    section#conteiner {
+        text-align: right;
+        
+        margin-top: -190px;
     }
     p {
         font-size: 1em;
@@ -109,3 +191,118 @@ button {
         margin-bottom: 30px;
     }
 }
+@media screen and (max-width: 830px) {
+    img {
+        width: 250px;
+    }
+    section#conteiner {
+        text-align: right;
+        
+        margin-top: -170px;
+    }
+    p {
+        font-size: 1em;
+    }
+    p.textred {
+        font-size: 2.3em;
+        color: red;
+        margin-bottom: 30px;
+    }
+}
+
+
+/* TABLET */
+
+
+@media screen and (max-width: 780px) {
+    body {
+        background-color: red;
+        
+    }
+    #mobile {
+        background-color: white;
+        width: 80vw;
+        margin: auto;
+        padding-top: 10px;
+    }
+
+    h1 {
+        text-align: center;
+        
+    }
+    nav {
+        margin-top: 25px;
+        background-color: white;
+        text-align: center;
+    }
+    .bt {
+        display: none;
+    }
+    img {
+        width: 300px;
+        margin-left: 50px;
+    }
+    section#conteiner {
+        text-align: left;
+        margin-top: 30px;
+        
+    }
+    p {
+        white-space: nowrap;
+        margin-left: 30px;
+        font-size: 20px;
+    }
+    p.textred {
+        font-size: 50px;
+    }
+}
+
+
+
+
+
+
+/* MOBILE */
+
+@media screen and (max-width: 680px) {
+    body {
+        background-color: red;
+        
+    }
+    #mobile {
+        background-color: white;
+        width: 85vw;
+        margin: auto;
+        padding-top: 10px;
+    }
+
+    h1 {
+        text-align: center;
+        
+    }
+    nav {
+        margin-top: 25px;
+        background-color: white;
+        text-align: center;
+    }
+    .bt {
+        display: none;
+    }
+    img {
+        width: 200px;
+        margin: auto;
+    }
+    section#principal {
+        margin-left: 80px;
+    }
+    p {
+        white-space: nowrap;
+        margin-left: -52px;
+        font-size: 17px;
+    }
+    p.textred {
+        font-size: 42px;
+        margin-left: -70px;
+    }
+}
+    
